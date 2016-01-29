@@ -4,5 +4,12 @@ app.controller('ControllersController', ControllersController);
 
 
 function ControllersController(){
-	this.controllersStatus = 'Working';
+    var poi = this;
+	poi.controllersStatus = 'Working';
+    poi.friends = ['Joey', 'Chandler', 'Monica', 'Phebes', 'Ross & Rachel']
+    
+    poi.addFriend = function (friend){
+       poi.friends.push(friend)
+       poi.newFriend = " "
+    }
 }

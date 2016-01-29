@@ -63,11 +63,12 @@ for(var i = 0; i < players.length; i++){
 	<p>Fill in the following code to have each of these objects rendered to the page</p>
 	
 	<!--Fill in the ng-repeat-->
-	<div class="comic" ng-repeat=""> <!--controller.data is where the array lives-->
+	<div class="comic" ng-repeat="player in controller.data"> <!--controller.data is where the array lives-->
 		<!--ng-src is looking for a set of {{but what goes here?}} -->
-		<img ng-src="" />
+		<img ng-src="{{player.url}}" />
 		<!-- ng-href unlike ng-src does not require the double curlies -->
-		<a ng-href="" target="_blank">How do you render the title?</a>
+		<a ng-href="player.link" target="_blank">{{player.title}}</a>
+        <p ng></p>
 	</div>
 	
 </div>
